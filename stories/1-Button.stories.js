@@ -8,7 +8,7 @@ export default {
 
 export const text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
 
-export const emoji = () => (
+export const emojis = () => (
   <Button onClick={action('clicked')}>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
