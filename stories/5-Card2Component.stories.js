@@ -1,6 +1,7 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import Card from "../src/Componentes/Card";
+import Card2 from "../src/Componentes/Card2";
+
 import { storiesOf } from "@storybook/react";
 
 //Necesarios para knobs
@@ -9,15 +10,14 @@ const stories = storiesOf("Storybook Knobs", module);
 stories.addDecorator(withKnobs);
 
 export default {
-  component: Card,
-  title: "Card Terminada"
+  component: Card2,
+  title: "Card 2 Terminada"
 };
 
-
-storiesOf("Card", module).add(
-  "Card Correcta numero uno",
+storiesOf("Card2", module).add(
+  "Card Correcta numero dos",
   () => (
-    <Card></Card>
+    <Card2></Card2>
   ),
   {
     notes: "Esta es una card simple pero llena."

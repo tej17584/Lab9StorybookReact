@@ -1,11 +1,11 @@
 import React from "react";
-
+import { action } from "@storybook/addon-actions";
 import "./estilos.scss";
 
 function Img(props) {
   return (
     <div>
-      <img class="card__img" src={props.LinkImagen} alt="Desert"></img>
+      <img onMouseOver={action('hovered')} class="card__img" src={props.LinkImagen} alt="Desert"></img>
     </div>
   );
 }
